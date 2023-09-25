@@ -1,9 +1,13 @@
 '''
-todo: make seperate files for Tilemap and utility that are just for this editor
+todo small:
+- ability to rotate and flip images?
+- say saved for a sec when you hit save
 
-todo: ability to rotate and flip images?
-
-todo: say saved for a sec when you hit save
+todo big:
+- could zoom out by rendering tiles half size
+- make tile groups clickable, maybe right clicking the group cycles its variant
+- undo
+- floodfill
 '''
 
 import sys
@@ -11,8 +15,8 @@ from math import floor
 
 import pygame as pg
 
-from code.utility import load_images
-from code.tilemap import Tilemap
+from scripts.utility import load_images
+from scripts.tilemap import Tilemap
 
 RENDER_SCALE = 3.0 #todo based on the screen
 
