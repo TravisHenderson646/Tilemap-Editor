@@ -2,6 +2,7 @@
 todo small:
 - ability to rotate and flip images?
 - say saved for a sec when you hit save
+- use WHILE statement for open and closing files
 
 todo big:
 - could zoom out by rendering tiles half size
