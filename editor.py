@@ -46,7 +46,7 @@ class Editor:
         self.right_clicking = False
         self.shift = False
         
-        self.tilemap = Tilemap(self, tile_size=16)
+        self.tilemap = Tilemap(self, tile_size=32)
         
         try:
             self.tilemap.load('map.json')
@@ -63,7 +63,6 @@ class Editor:
         self.grid_on = True
 
     def run(self):
-        '''The main game loop.'''
         while True:
             self.display.fill((0, 0, 0, 0))
             
