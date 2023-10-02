@@ -39,6 +39,7 @@ class Editor:
             'large_decor' : load_images('tiles/large_decor'),
             'stone' : load_images('tiles/stone'),
             'spawners': load_images('tiles/spawners'),
+            'loading_zones': load_images('tiles/loading_zones'),
             }
         
         self.movement = [False, False, False, False]
@@ -74,10 +75,9 @@ class Editor:
             self.tilemap.render(self.display, offset=self.rounded_scroll)
             
             current_tile_image = self.assets[self.tile_list[self.tile_group]][self.tile_variant]
-           # current_tile_image.set_alpha(150)
             
             mouse_pos = pg.Vector2(pg.mouse.get_pos()) / RENDER_SCALE
-            #tile_pos should be mouse_coord
+            #tile_pos should be tile_coord?
             tile_pos = (mouse_pos + self.rounded_scroll) / self.tilemap.tile_size
             tile_pos_rounded = (floor(tile_pos[0]), floor(tile_pos[1]))
             if self.grid_on:
@@ -107,8 +107,6 @@ class Editor:
 
             #current selected in top left
             self.display.blit(current_tile_image, (0, 0))
-
-            
             
             for event in pg.event.get():
                 if event.type == pg.QUIT:

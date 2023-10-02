@@ -7,6 +7,7 @@ BASE_IMG_PATH = 'data/images/'
 def load_image(path):
     img = pg.image.load(BASE_IMG_PATH + path).convert()
     img.set_colorkey((0, 0, 0))
+    print(img)
     return img
 
 def load_images(path):
