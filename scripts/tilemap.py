@@ -45,7 +45,7 @@ class Tilemap:
             if (tile['type'] in AUTOTILE_TYPES):
                 neighbors = set()
                 for shift in [(1, 0), (-1, 0), (0, -1), (0, 1)]:
-                    check_loc = str(tile['pos'][0] + shift[0]) + ';' + str(tile['pos'][1] + shift[1])
+                    check_loc = str(tile['pos'][0] // self.tile_size + shift[0]) + ';' + str(tile['pos'][1] // self.tile_size + shift[1])
                     if check_loc in self.tilemap:
                         if self.tilemap[check_loc]['type'] == tile['type']:
                             neighbors.add(shift)
@@ -54,7 +54,7 @@ class Tilemap:
                     tile['variant'] = AUTOTILE_MAP[neighbors]
                     if neighbors == tuple(sorted([(1, 0), (0, 1), (-1, 0), (0, -1)])):
                         for shift in [(1, 1), (1, -1), (-1, 1), (-1, -1)]:
-                            check_loc = str(tile['pos'][0] + shift[0]) + ';' + str(tile['pos'][1] + shift[1])
+                            check_loc = str(tile['pos'][0] // self.tile_size + shift[0]) + ';' + str(tile['pos'][1] // self.tile_size + shift[1])
                             if check_loc not in self.tilemap:
                                 match shift:
                                     case (1, 1):
