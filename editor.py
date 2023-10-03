@@ -51,8 +51,9 @@ class Editor:
         self.clicking = False
         self.right_clicking = False
         self.shift = False
+        self.tile_size = 32
         
-        self.tilemap = Tilemap(self, tile_size=32)
+        self.tilemap = Tilemap(self, tile_size=self.tile_size)
         
         try:
             self.tilemap.load('map.json')
@@ -116,7 +117,7 @@ class Editor:
                         self.tilemap.offgrid_tiles.append({
                             'type': self.tile_list[self.tile_group],
                             'variant': self.tile_variant,
-                            'pos': (self.mouse_pos[0] + self.scroll[0], self.mouse_pos[1] + self.scroll[1]),
+                            'pos': (floor(self.mouse_pos[0] + self.rounded_scroll[0]), floor(self.mouse_pos[1] + self.rounded_scroll[1])),
                             'is_drawn': self.is_drawn,
                             'is_interactable': self.is_interactable,
                             'flag': self.flag,
@@ -192,7 +193,7 @@ class Editor:
             self.tilemap.tilemap[tile_clicked] = {
                 'type': self.tile_list[self.tile_group],
                 'variant': self.tile_variant,
-                'pos': self.tile_pos_rounded,
+                'pos': (self.tile_pos_rounded[0] * self.tile_size, self.tile_pos_rounded[1] * self.tile_size),
                 'is_drawn': self.is_drawn,
                 'is_interactable': self.is_interactable,
                 'flag': self.flag

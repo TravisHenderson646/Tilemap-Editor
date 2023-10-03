@@ -71,8 +71,7 @@ class Tilemap:
 
     def render(self, surf, offset):
         '''Takes the display surface and screen scroll and renders the tilemap section'''
-        #have to optimize offgrid tiles at some point probably once i have enough
-        for tile in self.offgrid_tiles: #todo: dafluffy says this order but maybe its cooler to have offgrin in front THINK ABOUT IT
+        for tile in self.offgrid_tiles: #
             surf.blit(self.game.assets[tile['type']][tile['variant']], (floor(tile['pos'][0] - offset[0]), floor(tile['pos'][1] - offset[1])))
 
         for x in range(floor(offset[0] // self.tile_size), floor((offset[0] + surf.get_width()) // self.tile_size + 1)):
@@ -81,7 +80,7 @@ class Tilemap:
                 if loc in self.tilemap:
                     tile = self.tilemap[loc]
 
-                    surf.blit(self.game.assets[tile['type']][tile['variant']], (floor(tile['pos'][0]) * self.tile_size - offset[0], floor(tile['pos'][1]) * self.tile_size - offset[1]))
+                    surf.blit(self.game.assets[tile['type']][tile['variant']], (floor(tile['pos'][0]) - offset[0], floor(tile['pos'][1]) - offset[1]))
                     
                     
                     
