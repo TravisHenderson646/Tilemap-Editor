@@ -9,6 +9,6 @@ class Button:
         self.command = command
     def render(self, screen):
         screen.blit(self.image, self.rect)
-    def get_event(self, event):
-        if self.rect.collidepoint(pg.mouse.get_pos()):
+    def get_event(self, event, mouse_pos):
+        if self.rect.collidepoint(mouse_pos):
             self.command()

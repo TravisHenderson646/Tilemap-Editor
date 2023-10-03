@@ -22,6 +22,8 @@ from scripts.button import Button
 
 RENDER_SCALE = 2.0 #todo based on the screen
 
+BLACK = pg.Color(0, 0, 0)
+
 
 class Editor:
     def __init__(self):
@@ -68,15 +70,35 @@ class Editor:
         self.tile_variant = 0
         self.grid_on = True
         
-        self.keep = True
-        self.keep_button = Button((10, 600, 25, 25), self.test)
+        self.is_drawn = True
+        self.is_drawn_button = Button((5, 330, 25, 25), self.toggle_is_drawn)
+        self.is_interactable = True
+        self.is_interactable_button = Button((5, 300, 25, 25), self.toggle_is_interactable)
+        self.flag = ''
+        self.edit_flag_button = Button((610, 330, 25, 25), self.edit_flag)
+        
+    def edit_flag(self):
+        self.flag = input('Type a str for tile.flag:  ')
+        print(self.flag)
 
-    def test(self):
-        self.keep = not self.keep
-        print(f'wtf is going on{self.keep}')
+    def toggle_is_drawn(self):
+        self.is_drawn = not self.is_drawn
+        if self.is_drawn:
+            self.is_drawn_button.image.fill(self.is_drawn_button.color)
+        else:
+            self.is_drawn_button.image.fill(BLACK, (pg.Rect(4, 4, self.is_drawn_button.rect.width - 8, self.is_drawn_button.rect.height - 8)))
+        print(f'is drawn?{self.is_drawn}')
+        
+    def toggle_is_interactable(self):
+        self.is_interactable = not self.is_interactable
+        if self.is_interactable:
+            self.is_interactable_button.image.fill(self.is_interactable_button.color)
+        else:
+            self.is_interactable_button.image.fill(BLACK, (pg.Rect(4, 4, self.is_interactable_button.rect.width - 8, self.is_interactable_button.rect.height - 8)))
+        print(f'is interactable?: {self.is_interactable}')
         
     def event_loop(self):
-        self.mouse_pos = pg.Vector2(pg.mouse.get_pos()) / RENDER_SCALE
+        self.mouse_pos = pg.Vector2(pg.mouse.get_pos()) // RENDER_SCALE
         #tile_pos should be tile_coord?
         tile_pos = (self.mouse_pos + self.rounded_scroll) / self.tilemap.tile_size
         self.tile_pos_rounded = (floor(tile_pos[0]), floor(tile_pos[1]))
@@ -87,16 +109,23 @@ class Editor:
             if event.type == pg.MOUSEBUTTONDOWN:
                 if event.button == 1:
                     self.clicking = True
-                    self.keep_button.get_event(event)
+                    self.is_drawn_button.get_event(event, self.mouse_pos)
+                    self.is_interactable_button.get_event(event, self.mouse_pos)
+                    self.edit_flag_button.get_event(event, self.mouse_pos)
                     if not self.grid_on:
-                        # maybe should round the mouse pos for this
-                        tile_image = self.assets[self.tile_list[self.tile_group]][self.tile_variant]
                         self.tilemap.offgrid_tiles.append({
                             'type': self.tile_list[self.tile_group],
                             'variant': self.tile_variant,
                             'pos': (self.mouse_pos[0] + self.scroll[0], self.mouse_pos[1] + self.scroll[1]),
-                        #    'rect': pg.Rect(self.mouse_pos[0] + self.scroll[0], self.mouse_pos[1] + self.scroll[1], tile_image.get_width(), tile_image.get_height())
+                            'is_drawn': self.is_drawn,
+                            'is_interactable': self.is_interactable,
+                            'flag': self.flag,
                             })
+                        print(self.tilemap.offgrid_tiles[-1])
+                if event.button == 2:
+                    self.is_drawn_button.get_event(event, self.mouse_pos)
+                    self.is_interactable_button.get_event(event, self.mouse_pos)
+                    self.edit_flag_button.get_event(event, self.mouse_pos)
                 if event.button == 3:
                     self.right_clicking = True
                 if self.shift:
@@ -158,18 +187,17 @@ class Editor:
         
         self.rounded_scroll = pg.Vector2((floor(self.scroll[0]), floor(self.scroll[1])))
         
-
-            
-
-        # this should probably go after the event queue
         if self.clicking and self.grid_on:
             tile_clicked = str(self.tile_pos_rounded[0]) + ';' + str(self.tile_pos_rounded[1])
             self.tilemap.tilemap[tile_clicked] = {
                 'type': self.tile_list[self.tile_group],
                 'variant': self.tile_variant,
                 'pos': self.tile_pos_rounded,
-                #   'rect': pg.Rect(self.tile_pos_rounded[0] * self.tilemap.tile_size, self.tile_pos_rounded[1] * self.tilemap.tile_size, self.tilemap.tile_size, self.tilemap.tile_size)
+                'is_drawn': self.is_drawn,
+                'is_interactable': self.is_interactable,
+                'flag': self.flag
                 }
+            print(self.tilemap.tilemap[tile_clicked])
         if self.right_clicking:
             tile_hovered = str(self.tile_pos_rounded[0]) + ';' + str(self.tile_pos_rounded[1])
             if tile_hovered in self.tilemap.tilemap:
@@ -195,10 +223,13 @@ class Editor:
 
         #current selected in top left
         self.display.blit(current_tile_image, (0, 0))
+        
+        # render the buttons
+        self.is_drawn_button.render(self.display)
+        self.is_interactable_button.render(self.display)
+        self.edit_flag_button.render(self.display)
+        
         self.screen.blit(pg.transform.scale(self.display, self.screen.get_size()), (0,0))
-        
-        self.keep_button.render(self.screen)
-        
         pg.display.update()
         self.clock.tick(60)
 

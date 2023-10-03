@@ -42,15 +42,32 @@ class Tilemap:
         
     def autotile(self):
         for loc, tile in self.tilemap.items():
-            neighbors = set()
-            for shift in [(1, 0), (-1, 0), (0, -1), (0, 1)]:
-                check_loc = str(tile['pos'][0] + shift[0]) + ';' + str(tile['pos'][1] + shift[1])
-                if check_loc in self.tilemap:
-                    if self.tilemap[check_loc]['type'] == tile['type']:
-                        neighbors.add(shift)
-            neighbors = tuple(sorted(neighbors))
-            if (tile['type'] in AUTOTILE_TYPES) and (neighbors in AUTOTILE_MAP):
-                tile['variant'] = AUTOTILE_MAP[neighbors]
+            if (tile['type'] in AUTOTILE_TYPES):
+                neighbors = set()
+                for shift in [(1, 0), (-1, 0), (0, -1), (0, 1)]:
+                    check_loc = str(tile['pos'][0] + shift[0]) + ';' + str(tile['pos'][1] + shift[1])
+                    if check_loc in self.tilemap:
+                        if self.tilemap[check_loc]['type'] == tile['type']:
+                            neighbors.add(shift)
+                neighbors = tuple(sorted(neighbors))
+                if (neighbors in AUTOTILE_MAP):
+                    tile['variant'] = AUTOTILE_MAP[neighbors]
+                    if neighbors == tuple(sorted([(1, 0), (0, 1), (-1, 0), (0, -1)])):
+                        for shift in [(1, 1), (1, -1), (-1, 1), (-1, -1)]:
+                            check_loc = str(tile['pos'][0] + shift[0]) + ';' + str(tile['pos'][1] + shift[1])
+                            if check_loc not in self.tilemap:
+                                match shift:
+                                    case (1, 1):
+                                        tile['variant'] = 11
+                                    case (1, -1):
+                                        tile['variant'] = 10
+                                    case (-1, 1):
+                                        tile['variant'] = 12
+                                    case (-1, -1):
+                                        tile['variant'] = 9
+
+                            
+                            
 
     def render(self, surf, offset):
         '''Takes the display surface and screen scroll and renders the tilemap section'''
