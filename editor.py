@@ -9,6 +9,7 @@ todo big:
 - make tile groups clickable, maybe right clicking the group cycles its variant
 - undo
 - floodfill
+- paralax the entire map could have a layer associated with it like a depth, such as 'player layer' 'first layer behind player', for 
 '''
 
 import sys
@@ -127,6 +128,15 @@ class Editor:
                     self.is_drawn_button.get_event(event, self.mouse_pos)
                     self.is_interactable_button.get_event(event, self.mouse_pos)
                     self.edit_flag_button.get_event(event, self.mouse_pos)
+                    tile_hovered = str(self.tile_pos_rounded[0]) + ';' + str(self.tile_pos_rounded[1])
+                    if tile_hovered in self.tilemap.tilemap:
+                        print(self.tilemap.tilemap[tile_hovered])
+                        print(tile_hoveredw)
+                    for tile in self.tilemap.offgrid_tiles.copy():
+                        tile_image = self.assets[tile['type']][tile['variant']]
+                        tile_rect = pg.Rect(tile['pos'][0] - self.scroll[0], tile['pos'][1] - self.scroll[1], tile_image.get_width(), tile_image.get_height())
+                        if tile_rect.collidepoint(self.mouse_pos):
+                            print(tile)
                 if event.button == 3:
                     self.right_clicking = True
                 if self.shift:

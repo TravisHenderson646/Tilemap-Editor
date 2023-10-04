@@ -36,12 +36,18 @@ class Tilemap:
         map_data = json.load(file)
         file.close()
         
+        
         self.tilemap = map_data['tilemap']
+        for key, value in self.tilemap.items():
+            print(tuple(value['pos']))
+            self.tilemap[key]['pos'] = tuple(value['pos'])
+            
         self.tile_size = map_data['tile_size']
         self.offgrid_tiles = map_data['offgrid']
         
     def autotile(self):
         for loc, tile in self.tilemap.items():
+            print(tile)
             if (tile['type'] in AUTOTILE_TYPES):
                 neighbors = set()
                 for shift in [(1, 0), (-1, 0), (0, -1), (0, 1)]:
@@ -55,16 +61,16 @@ class Tilemap:
                     if neighbors == tuple(sorted([(1, 0), (0, 1), (-1, 0), (0, -1)])):
                         for shift in [(1, 1), (1, -1), (-1, 1), (-1, -1)]:
                             check_loc = str(tile['pos'][0] // self.tile_size + shift[0]) + ';' + str(tile['pos'][1] // self.tile_size + shift[1])
-                            if check_loc not in self.tilemap:
-                                match shift:
-                                    case (1, 1):
-                                        tile['variant'] = 11
-                                    case (1, -1):
-                                        tile['variant'] = 10
-                                    case (-1, 1):
-                                        tile['variant'] = 12
-                                    case (-1, -1):
-                                        tile['variant'] = 9
+                            if (check_loc not in self.tilemap) or self.tilemap[check_loc]['type'] != tile['type']: # if theres no corner tile or its a different type, auto tile some way
+                                    match shift:
+                                        case (1, 1):
+                                            tile['variant'] = 11
+                                        case (1, -1):
+                                            tile['variant'] = 10
+                                        case (-1, 1):
+                                            tile['variant'] = 12
+                                        case (-1, -1):
+                                            tile['variant'] = 9
 
                             
                             
