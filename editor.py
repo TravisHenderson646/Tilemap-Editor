@@ -46,6 +46,7 @@ class Editor:
             'stone' : load_images('tiles/stone'),
             'spawners': load_images('tiles/spawners'),
             'loading_zones': load_images('tiles/loading_zones'),
+            'spawns': load_images('tiles/spawns')
             }
         
         self.movement = [False, False, False, False]
