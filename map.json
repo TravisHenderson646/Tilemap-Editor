@@ -1,156 +1,3678 @@
 {
   "tilemap": {
-    "7;5": {
+    "0;0": {
       "type": "grass",
-      "variant": 0,
+      "variant": 2,
       "pos": [
-        7,
-        5
-      ]
+        0,
+        0
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
     },
-    "7;6": {
+    "-1;0": {
       "type": "grass",
       "variant": 0,
       "pos": [
-        7,
-        6
-      ]
+        -32,
+        0
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
     },
-    "8;6": {
+    "-3;-1": {
+      "type": "grass",
+      "variant": 2,
+      "pos": [
+        -96,
+        -32
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-3;0": {
+      "type": "grass",
+      "variant": 4,
+      "pos": [
+        -96,
+        0
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-4;0": {
+      "type": "grass",
+      "variant": 5,
+      "pos": [
+        -128,
+        0
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-4;-1": {
+      "type": "grass",
+      "variant": 1,
+      "pos": [
+        -128,
+        -32
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-5;0": {
+      "type": "grass",
+      "variant": 5,
+      "pos": [
+        -160,
+        0
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-6;0": {
+      "type": "grass",
+      "variant": 5,
+      "pos": [
+        -192,
+        0
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-6;-1": {
+      "type": "grass",
+      "variant": 9,
+      "pos": [
+        -192,
+        -32
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-5;-1": {
+      "type": "grass",
+      "variant": 10,
+      "pos": [
+        -160,
+        -32
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-6;-2": {
+      "type": "grass",
+      "variant": 7,
+      "pos": [
+        -192,
+        -64
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-5;-2": {
+      "type": "grass",
+      "variant": 3,
+      "pos": [
+        -160,
+        -64
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-5;-3": {
+      "type": "grass",
+      "variant": 3,
+      "pos": [
+        -160,
+        -96
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-7;-3": {
+      "type": "grass",
+      "variant": 6,
+      "pos": [
+        -224,
+        -96
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-6;-3": {
+      "type": "grass",
+      "variant": 12,
+      "pos": [
+        -192,
+        -96
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-7;0": {
+      "type": "grass",
+      "variant": 5,
+      "pos": [
+        -224,
+        0
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-7;-1": {
+      "type": "grass",
+      "variant": 1,
+      "pos": [
+        -224,
+        -32
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-7;-4": {
       "type": "grass",
       "variant": 0,
       "pos": [
-        8,
-        6
-      ]
+        -224,
+        -128
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-6;-4": {
+      "type": "grass",
+      "variant": 9,
+      "pos": [
+        -192,
+        -128
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-5;-4": {
+      "type": "grass",
+      "variant": 3,
+      "pos": [
+        -160,
+        -128
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-5;-5": {
+      "type": "grass",
+      "variant": 3,
+      "pos": [
+        -160,
+        -160
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-6;-5": {
+      "type": "grass",
+      "variant": 7,
+      "pos": [
+        -192,
+        -160
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-6;-6": {
+      "type": "grass",
+      "variant": 7,
+      "pos": [
+        -192,
+        -192
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-5;-6": {
+      "type": "grass",
+      "variant": 3,
+      "pos": [
+        -160,
+        -192
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-7;-7": {
+      "type": "grass",
+      "variant": 6,
+      "pos": [
+        -224,
+        -224
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-6;-7": {
+      "type": "grass",
+      "variant": 12,
+      "pos": [
+        -192,
+        -224
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-5;-7": {
+      "type": "grass",
+      "variant": 3,
+      "pos": [
+        -160,
+        -224
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-7;-8": {
+      "type": "grass",
+      "variant": 7,
+      "pos": [
+        -224,
+        -256
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-6;-8": {
+      "type": "grass",
+      "variant": 8,
+      "pos": [
+        -192,
+        -256
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-5;-8": {
+      "type": "grass",
+      "variant": 3,
+      "pos": [
+        -160,
+        -256
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-7;-9": {
+      "type": "grass",
+      "variant": 12,
+      "pos": [
+        -224,
+        -288
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-6;-9": {
+      "type": "grass",
+      "variant": 8,
+      "pos": [
+        -192,
+        -288
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-5;-9": {
+      "type": "grass",
+      "variant": 3,
+      "pos": [
+        -160,
+        -288
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-8;-9": {
+      "type": "grass",
+      "variant": 5,
+      "pos": [
+        -256,
+        -288
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-9;-9": {
+      "type": "grass",
+      "variant": 6,
+      "pos": [
+        -288,
+        -288
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-9;-10": {
+      "type": "grass",
+      "variant": 12,
+      "pos": [
+        -288,
+        -320
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-8;-10": {
+      "type": "grass",
+      "variant": 8,
+      "pos": [
+        -256,
+        -320
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-7;-10": {
+      "type": "grass",
+      "variant": 8,
+      "pos": [
+        -224,
+        -320
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-6;-10": {
+      "type": "grass",
+      "variant": 8,
+      "pos": [
+        -192,
+        -320
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-5;-10": {
+      "type": "grass",
+      "variant": 11,
+      "pos": [
+        -160,
+        -320
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-10;-11": {
+      "type": "grass",
+      "variant": 8,
+      "pos": [
+        -320,
+        -352
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-10;-10": {
+      "type": "grass",
+      "variant": 5,
+      "pos": [
+        -320,
+        -320
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-11;-10": {
+      "type": "grass",
+      "variant": 6,
+      "pos": [
+        -352,
+        -320
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-11;-11": {
+      "type": "grass",
+      "variant": 12,
+      "pos": [
+        -352,
+        -352
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-12;-11": {
+      "type": "grass",
+      "variant": 5,
+      "pos": [
+        -384,
+        -352
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-9;-11": {
+      "type": "grass",
+      "variant": 8,
+      "pos": [
+        -288,
+        -352
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-8;-11": {
+      "type": "grass",
+      "variant": 8,
+      "pos": [
+        -256,
+        -352
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-7;-11": {
+      "type": "grass",
+      "variant": 8,
+      "pos": [
+        -224,
+        -352
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-6;-11": {
+      "type": "grass",
+      "variant": 8,
+      "pos": [
+        -192,
+        -352
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-5;-11": {
+      "type": "grass",
+      "variant": 8,
+      "pos": [
+        -160,
+        -352
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-13;-11": {
+      "type": "grass",
+      "variant": 5,
+      "pos": [
+        -416,
+        -352
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-14;-11": {
+      "type": "grass",
+      "variant": 6,
+      "pos": [
+        -448,
+        -352
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-13;-12": {
+      "type": "grass",
+      "variant": 1,
+      "pos": [
+        -416,
+        -384
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-14;-12": {
+      "type": "grass",
+      "variant": 0,
+      "pos": [
+        -448,
+        -384
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-12;-12": {
+      "type": "grass",
+      "variant": 1,
+      "pos": [
+        -384,
+        -384
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-11;-12": {
+      "type": "grass",
+      "variant": 1,
+      "pos": [
+        -352,
+        -384
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-10;-12": {
+      "type": "grass",
+      "variant": 1,
+      "pos": [
+        -320,
+        -384
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-9;-12": {
+      "type": "grass",
+      "variant": 1,
+      "pos": [
+        -288,
+        -384
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-8;-12": {
+      "type": "grass",
+      "variant": 1,
+      "pos": [
+        -256,
+        -384
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-7;-12": {
+      "type": "grass",
+      "variant": 1,
+      "pos": [
+        -224,
+        -384
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-6;-12": {
+      "type": "grass",
+      "variant": 1,
+      "pos": [
+        -192,
+        -384
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-5;-12": {
+      "type": "grass",
+      "variant": 1,
+      "pos": [
+        -160,
+        -384
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-4;-12": {
+      "type": "grass",
+      "variant": 2,
+      "pos": [
+        -128,
+        -384
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-4;-11": {
+      "type": "grass",
+      "variant": 3,
+      "pos": [
+        -128,
+        -352
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-4;-10": {
+      "type": "grass",
+      "variant": 4,
+      "pos": [
+        -128,
+        -320
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-1;1": {
+      "type": "grass",
+      "variant": 7,
+      "pos": [
+        -32,
+        32
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "0;1": {
+      "type": "grass",
+      "variant": 10,
+      "pos": [
+        0,
+        32
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "0;2": {
+      "type": "grass",
+      "variant": 8,
+      "pos": [
+        0,
+        64
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-1;2": {
+      "type": "grass",
+      "variant": 7,
+      "pos": [
+        -32,
+        64
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-1;3": {
+      "type": "grass",
+      "variant": 7,
+      "pos": [
+        -32,
+        96
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "0;3": {
+      "type": "grass",
+      "variant": 8,
+      "pos": [
+        0,
+        96
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "0;4": {
+      "type": "grass",
+      "variant": 11,
+      "pos": [
+        0,
+        128
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-1;4": {
+      "type": "grass",
+      "variant": 9,
+      "pos": [
+        -32,
+        128
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-2;4": {
+      "type": "grass",
+      "variant": 1,
+      "pos": [
+        -64,
+        128
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-3;4": {
+      "type": "grass",
+      "variant": 1,
+      "pos": [
+        -96,
+        128
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-3;5": {
+      "type": "grass",
+      "variant": 8,
+      "pos": [
+        -96,
+        160
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-2;5": {
+      "type": "grass",
+      "variant": 8,
+      "pos": [
+        -64,
+        160
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-1;5": {
+      "type": "grass",
+      "variant": 11,
+      "pos": [
+        -32,
+        160
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "0;5": {
+      "type": "grass",
+      "variant": 4,
+      "pos": [
+        0,
+        160
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-4;4": {
+      "type": "grass",
+      "variant": 10,
+      "pos": [
+        -128,
+        128
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-5;4": {
+      "type": "grass",
+      "variant": 8,
+      "pos": [
+        -160,
+        128
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-5;5": {
+      "type": "grass",
+      "variant": 8,
+      "pos": [
+        -160,
+        160
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-4;5": {
+      "type": "grass",
+      "variant": 8,
+      "pos": [
+        -128,
+        160
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-4;3": {
+      "type": "grass",
+      "variant": 2,
+      "pos": [
+        -128,
+        96
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-5;3": {
+      "type": "grass",
+      "variant": 1,
+      "pos": [
+        -160,
+        96
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-6;3": {
+      "type": "grass",
+      "variant": 0,
+      "pos": [
+        -192,
+        96
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-6;4": {
+      "type": "grass",
+      "variant": 7,
+      "pos": [
+        -192,
+        128
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-6;5": {
+      "type": "grass",
+      "variant": 9,
+      "pos": [
+        -192,
+        160
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-7;5": {
+      "type": "grass",
+      "variant": 1,
+      "pos": [
+        -224,
+        160
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-8;5": {
+      "type": "grass",
+      "variant": 1,
+      "pos": [
+        -256,
+        160
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-9;5": {
+      "type": "grass",
+      "variant": 10,
+      "pos": [
+        -288,
+        160
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-9;4": {
+      "type": "grass",
+      "variant": 3,
+      "pos": [
+        -288,
+        128
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-9;3": {
+      "type": "grass",
+      "variant": 3,
+      "pos": [
+        -288,
+        96
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-9;2": {
+      "type": "grass",
+      "variant": 3,
+      "pos": [
+        -288,
+        64
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-9;1": {
+      "type": "grass",
+      "variant": 3,
+      "pos": [
+        -288,
+        32
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-9;0": {
+      "type": "grass",
+      "variant": 11,
+      "pos": [
+        -288,
+        0
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-8;0": {
+      "type": "grass",
+      "variant": 5,
+      "pos": [
+        -256,
+        0
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-8;-1": {
+      "type": "grass",
+      "variant": 1,
+      "pos": [
+        -256,
+        -32
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-9;-1": {
+      "type": "grass",
+      "variant": 1,
+      "pos": [
+        -288,
+        -32
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-10;-1": {
+      "type": "grass",
+      "variant": 1,
+      "pos": [
+        -320,
+        -32
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-11;-1": {
+      "type": "grass",
+      "variant": 0,
+      "pos": [
+        -352,
+        -32
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-11;0": {
+      "type": "grass",
+      "variant": 7,
+      "pos": [
+        -352,
+        0
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-11;1": {
+      "type": "grass",
+      "variant": 7,
+      "pos": [
+        -352,
+        32
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-11;2": {
+      "type": "grass",
+      "variant": 6,
+      "pos": [
+        -352,
+        64
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-10;2": {
+      "type": "grass",
+      "variant": 12,
+      "pos": [
+        -320,
+        64
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-10;3": {
+      "type": "grass",
+      "variant": 7,
+      "pos": [
+        -320,
+        96
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-10;4": {
+      "type": "grass",
+      "variant": 7,
+      "pos": [
+        -320,
+        128
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-10;0": {
+      "type": "grass",
+      "variant": 8,
+      "pos": [
+        -320,
+        0
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-10;1": {
+      "type": "grass",
+      "variant": 8,
+      "pos": [
+        -320,
+        32
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-10;5": {
+      "type": "grass",
+      "variant": 7,
+      "pos": [
+        -320,
+        160
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-9;6": {
+      "type": "grass",
+      "variant": 12,
+      "pos": [
+        -288,
+        192
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-8;6": {
+      "type": "grass",
+      "variant": 8,
+      "pos": [
+        -256,
+        192
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-8;7": {
+      "type": "grass",
+      "variant": 8,
+      "pos": [
+        -256,
+        224
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-8;8": {
+      "type": "grass",
+      "variant": 5,
+      "pos": [
+        -256,
+        256
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-7;8": {
+      "type": "grass",
+      "variant": 4,
+      "pos": [
+        -224,
+        256
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-9;8": {
+      "type": "grass",
+      "variant": 6,
+      "pos": [
+        -288,
+        256
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-9;7": {
+      "type": "grass",
+      "variant": 7,
+      "pos": [
+        -288,
+        224
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-7;6": {
+      "type": "grass",
+      "variant": 8,
+      "pos": [
+        -224,
+        192
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-7;7": {
+      "type": "grass",
+      "variant": 11,
+      "pos": [
+        -224,
+        224
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-6;6": {
+      "type": "grass",
+      "variant": 8,
+      "pos": [
+        -192,
+        192
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-6;7": {
+      "type": "grass",
+      "variant": 5,
+      "pos": [
+        -192,
+        224
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-5;7": {
+      "type": "grass",
+      "variant": 4,
+      "pos": [
+        -160,
+        224
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-5;6": {
+      "type": "grass",
+      "variant": 11,
+      "pos": [
+        -160,
+        192
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-4;6": {
+      "type": "grass",
+      "variant": 5,
+      "pos": [
+        -128,
+        192
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-3;6": {
+      "type": "grass",
+      "variant": 5,
+      "pos": [
+        -96,
+        192
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-2;6": {
+      "type": "grass",
+      "variant": 12,
+      "pos": [
+        -64,
+        192
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-2;7": {
+      "type": "grass",
+      "variant": 7,
+      "pos": [
+        -64,
+        224
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-1;6": {
+      "type": "grass",
+      "variant": 3,
+      "pos": [
+        -32,
+        192
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-1;7": {
+      "type": "grass",
+      "variant": 3,
+      "pos": [
+        -32,
+        224
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-1;8": {
+      "type": "grass",
+      "variant": 3,
+      "pos": [
+        -32,
+        256
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-2;8": {
+      "type": "grass",
+      "variant": 7,
+      "pos": [
+        -64,
+        256
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "1;9": {
+      "type": "grass",
+      "variant": 1,
+      "pos": [
+        32,
+        288
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "0;9": {
+      "type": "grass",
+      "variant": 1,
+      "pos": [
+        0,
+        288
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "0;10": {
+      "type": "grass",
+      "variant": 11,
+      "pos": [
+        0,
+        320
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-1;10": {
+      "type": "grass",
+      "variant": 12,
+      "pos": [
+        -32,
+        320
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-1;9": {
+      "type": "grass",
+      "variant": 10,
+      "pos": [
+        -32,
+        288
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "0;11": {
+      "type": "grass",
+      "variant": 4,
+      "pos": [
+        0,
+        352
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "1;10": {
+      "type": "grass",
+      "variant": 5,
+      "pos": [
+        32,
+        320
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "2;9": {
+      "type": "grass",
+      "variant": 2,
+      "pos": [
+        64,
+        288
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-2;9": {
+      "type": "grass",
+      "variant": 7,
+      "pos": [
+        -64,
+        288
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-2;10": {
+      "type": "grass",
+      "variant": 6,
+      "pos": [
+        -64,
+        320
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-1;11": {
+      "type": "grass",
+      "variant": 6,
+      "pos": [
+        -32,
+        352
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "1;1": {
+      "type": "grass",
+      "variant": 2,
+      "pos": [
+        32,
+        32
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "2;2": {
+      "type": "grass",
+      "variant": 1,
+      "pos": [
+        64,
+        64
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "1;2": {
+      "type": "grass",
+      "variant": 10,
+      "pos": [
+        32,
+        64
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "1;3": {
+      "type": "grass",
+      "variant": 8,
+      "pos": [
+        32,
+        96
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "2;3": {
+      "type": "grass",
+      "variant": 8,
+      "pos": [
+        64,
+        96
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "2;4": {
+      "type": "grass",
+      "variant": 5,
+      "pos": [
+        64,
+        128
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "1;4": {
+      "type": "grass",
+      "variant": 5,
+      "pos": [
+        32,
+        128
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "3;4": {
+      "type": "grass",
+      "variant": 12,
+      "pos": [
+        96,
+        128
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "3;3": {
+      "type": "grass",
+      "variant": 8,
+      "pos": [
+        96,
+        96
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "4;3": {
+      "type": "grass",
+      "variant": 3,
+      "pos": [
+        128,
+        96
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "3;2": {
+      "type": "grass",
+      "variant": 1,
+      "pos": [
+        96,
+        64
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "4;2": {
+      "type": "grass",
+      "variant": 2,
+      "pos": [
+        128,
+        64
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "4;4": {
+      "type": "grass",
+      "variant": 10,
+      "pos": [
+        128,
+        128
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "4;5": {
+      "type": "grass",
+      "variant": 5,
+      "pos": [
+        128,
+        160
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "5;4": {
+      "type": "grass",
+      "variant": 1,
+      "pos": [
+        160,
+        128
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "6;4": {
+      "type": "grass",
+      "variant": 2,
+      "pos": [
+        192,
+        128
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "5;5": {
+      "type": "grass",
+      "variant": 12,
+      "pos": [
+        160,
+        160
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "6;5": {
+      "type": "grass",
+      "variant": 10,
+      "pos": [
+        192,
+        160
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "3;5": {
+      "type": "grass",
+      "variant": 6,
+      "pos": [
+        96,
+        160
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "5;6": {
+      "type": "grass",
+      "variant": 6,
+      "pos": [
+        160,
+        192
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "6;6": {
+      "type": "grass",
+      "variant": 5,
+      "pos": [
+        192,
+        192
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
     },
     "8;5": {
       "type": "grass",
-      "variant": 0,
+      "variant": 1,
       "pos": [
-        8,
-        5
-      ]
+        256,
+        160
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
     },
-    "9;5": {
+    "8;6": {
       "type": "grass",
-      "variant": 0,
+      "variant": 5,
       "pos": [
-        9,
-        5
-      ]
+        256,
+        192
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "7;5": {
+      "type": "grass",
+      "variant": 1,
+      "pos": [
+        224,
+        160
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "7;6": {
+      "type": "grass",
+      "variant": 5,
+      "pos": [
+        224,
+        192
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
     },
     "9;4": {
       "type": "grass",
-      "variant": 0,
+      "variant": 7,
       "pos": [
-        9,
-        4
-      ]
+        288,
+        128
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
     },
-    "10;4": {
+    "9;3": {
       "type": "grass",
       "variant": 0,
       "pos": [
-        10,
-        4
-      ]
+        288,
+        96
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "10;3": {
+      "type": "grass",
+      "variant": 9,
+      "pos": [
+        320,
+        96
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "10;2": {
+      "type": "grass",
+      "variant": 0,
+      "pos": [
+        320,
+        64
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "11;2": {
+      "type": "grass",
+      "variant": 1,
+      "pos": [
+        352,
+        64
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "9;5": {
+      "type": "grass",
+      "variant": 9,
+      "pos": [
+        288,
+        160
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
     },
     "10;5": {
       "type": "grass",
-      "variant": 0,
+      "variant": 8,
       "pos": [
-        10,
-        5
-      ]
+        320,
+        160
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
     },
-    "11;5": {
+    "10;4": {
       "type": "grass",
-      "variant": 0,
+      "variant": 8,
       "pos": [
-        11,
-        5
-      ]
+        320,
+        128
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
     },
     "11;4": {
       "type": "grass",
-      "variant": 0,
+      "variant": 8,
       "pos": [
-        11,
-        4
-      ]
+        352,
+        128
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "11;3": {
+      "type": "grass",
+      "variant": 8,
+      "pos": [
+        352,
+        96
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "12;2": {
+      "type": "grass",
+      "variant": 1,
+      "pos": [
+        384,
+        64
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "13;2": {
+      "type": "grass",
+      "variant": 2,
+      "pos": [
+        416,
+        64
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "12;3": {
+      "type": "grass",
+      "variant": 8,
+      "pos": [
+        384,
+        96
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "12;4": {
+      "type": "grass",
+      "variant": 11,
+      "pos": [
+        384,
+        128
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "11;5": {
+      "type": "grass",
+      "variant": 11,
+      "pos": [
+        352,
+        160
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "10;6": {
+      "type": "grass",
+      "variant": 5,
+      "pos": [
+        320,
+        192
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "9;6": {
+      "type": "grass",
+      "variant": 5,
+      "pos": [
+        288,
+        192
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "11;6": {
+      "type": "grass",
+      "variant": 4,
+      "pos": [
+        352,
+        192
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
     },
     "12;5": {
       "type": "grass",
-      "variant": 0,
+      "variant": 4,
       "pos": [
-        12,
-        5
-      ]
+        384,
+        160
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
     },
-    "12;6": {
+    "13;4": {
       "type": "grass",
-      "variant": 0,
+      "variant": 5,
       "pos": [
-        12,
-        6
-      ]
+        416,
+        128
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
     },
-    "13;6": {
+    "13;3": {
       "type": "grass",
-      "variant": 0,
+      "variant": 10,
       "pos": [
-        13,
-        6
-      ]
-    },
-    "13;5": {
-      "type": "grass",
-      "variant": 0,
-      "pos": [
-        13,
-        5
-      ]
-    },
-    "6;4": {
-      "type": "loading_zones",
-      "variant": 0,
-      "pos": [
-        6,
-        4
-      ]
-    },
-    "6;3": {
-      "type": "loading_zones",
-      "variant": 0,
-      "pos": [
-        6,
-        3
-      ]
-    },
-    "14;4": {
-      "type": "loading_zones",
-      "variant": 1,
-      "pos": [
-        14,
-        4
-      ]
+        416,
+        96
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
     },
     "14;3": {
-      "type": "loading_zones",
+      "type": "grass",
       "variant": 1,
       "pos": [
-        14,
-        3
-      ]
+        448,
+        96
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
     },
-    "11;1": {
+    "15;3": {
+      "type": "grass",
+      "variant": 1,
+      "pos": [
+        480,
+        96
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "16;3": {
+      "type": "grass",
+      "variant": 1,
+      "pos": [
+        512,
+        96
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "16;4": {
+      "type": "grass",
+      "variant": 5,
+      "pos": [
+        512,
+        128
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "15;4": {
+      "type": "grass",
+      "variant": 5,
+      "pos": [
+        480,
+        128
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "14;4": {
+      "type": "grass",
+      "variant": 5,
+      "pos": [
+        448,
+        128
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "17;3": {
+      "type": "grass",
+      "variant": 1,
+      "pos": [
+        544,
+        96
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "18;3": {
+      "type": "grass",
+      "variant": 1,
+      "pos": [
+        576,
+        96
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "21;3": {
+      "type": "grass",
+      "variant": 9,
+      "pos": [
+        672,
+        96
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "20;3": {
+      "type": "grass",
+      "variant": 1,
+      "pos": [
+        640,
+        96
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "19;3": {
+      "type": "grass",
+      "variant": 1,
+      "pos": [
+        608,
+        96
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "22;3": {
+      "type": "grass",
+      "variant": 8,
+      "pos": [
+        704,
+        96
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "21;0": {
+      "type": "grass",
+      "variant": 0,
+      "pos": [
+        672,
+        0
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "21;1": {
+      "type": "grass",
+      "variant": 7,
+      "pos": [
+        672,
+        32
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "21;2": {
+      "type": "grass",
+      "variant": 7,
+      "pos": [
+        672,
+        64
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "22;0": {
+      "type": "grass",
+      "variant": 9,
+      "pos": [
+        704,
+        0
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "22;1": {
+      "type": "grass",
+      "variant": 8,
+      "pos": [
+        704,
+        32
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "23;1": {
+      "type": "grass",
+      "variant": 3,
+      "pos": [
+        736,
+        32
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "23;2": {
+      "type": "grass",
+      "variant": 3,
+      "pos": [
+        736,
+        64
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "23;3": {
+      "type": "grass",
+      "variant": 3,
+      "pos": [
+        736,
+        96
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "19;4": {
+      "type": "grass",
+      "variant": 5,
+      "pos": [
+        608,
+        128
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "18;4": {
+      "type": "grass",
+      "variant": 5,
+      "pos": [
+        576,
+        128
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "17;4": {
+      "type": "grass",
+      "variant": 5,
+      "pos": [
+        544,
+        128
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "22;2": {
+      "type": "grass",
+      "variant": 8,
+      "pos": [
+        704,
+        64
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "22;4": {
+      "type": "grass",
+      "variant": 5,
+      "pos": [
+        704,
+        128
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "21;4": {
+      "type": "grass",
+      "variant": 5,
+      "pos": [
+        672,
+        128
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "20;4": {
+      "type": "grass",
+      "variant": 5,
+      "pos": [
+        640,
+        128
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "23;4": {
+      "type": "grass",
+      "variant": 4,
+      "pos": [
+        736,
+        128
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "17;-1": {
+      "type": "grass",
+      "variant": 5,
+      "pos": [
+        544,
+        -32
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "18;-1": {
+      "type": "grass",
+      "variant": 4,
+      "pos": [
+        576,
+        -32
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "18;-2": {
+      "type": "grass",
+      "variant": 2,
+      "pos": [
+        576,
+        -64
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "17;-2": {
+      "type": "grass",
+      "variant": 10,
+      "pos": [
+        544,
+        -64
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "16;-2": {
+      "type": "grass",
+      "variant": 12,
+      "pos": [
+        512,
+        -64
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "16;-3": {
+      "type": "grass",
+      "variant": 10,
+      "pos": [
+        512,
+        -96
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "17;-3": {
+      "type": "grass",
+      "variant": 2,
+      "pos": [
+        544,
+        -96
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "15;-2": {
+      "type": "grass",
+      "variant": 6,
+      "pos": [
+        480,
+        -64
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "15;-3": {
+      "type": "grass",
+      "variant": 12,
+      "pos": [
+        480,
+        -96
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "16;-1": {
+      "type": "grass",
+      "variant": 6,
+      "pos": [
+        512,
+        -32
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "14;-3": {
+      "type": "grass",
+      "variant": 5,
+      "pos": [
+        448,
+        -96
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "13;-3": {
+      "type": "grass",
+      "variant": 5,
+      "pos": [
+        416,
+        -96
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "11;-3": {
+      "type": "grass",
+      "variant": 5,
+      "pos": [
+        352,
+        -96
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "12;-3": {
+      "type": "grass",
+      "variant": 5,
+      "pos": [
+        384,
+        -96
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "10;-3": {
+      "type": "grass",
+      "variant": 5,
+      "pos": [
+        320,
+        -96
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "10;-4": {
+      "type": "grass",
+      "variant": 8,
+      "pos": [
+        320,
+        -128
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "11;-4": {
+      "type": "grass",
+      "variant": 8,
+      "pos": [
+        352,
+        -128
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "12;-4": {
+      "type": "grass",
+      "variant": 8,
+      "pos": [
+        384,
+        -128
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "13;-4": {
+      "type": "grass",
+      "variant": 8,
+      "pos": [
+        416,
+        -128
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "14;-4": {
+      "type": "grass",
+      "variant": 8,
+      "pos": [
+        448,
+        -128
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "15;-4": {
+      "type": "grass",
+      "variant": 10,
+      "pos": [
+        480,
+        -128
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "10;-5": {
+      "type": "grass",
+      "variant": 10,
+      "pos": [
+        320,
+        -160
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "11;-5": {
+      "type": "grass",
+      "variant": 1,
+      "pos": [
+        352,
+        -160
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "12;-5": {
+      "type": "grass",
+      "variant": 9,
+      "pos": [
+        384,
+        -160
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "13;-5": {
+      "type": "grass",
+      "variant": 8,
+      "pos": [
+        416,
+        -160
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "14;-5": {
+      "type": "grass",
+      "variant": 10,
+      "pos": [
+        448,
+        -160
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "16;-4": {
+      "type": "grass",
+      "variant": 2,
+      "pos": [
+        512,
+        -128
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "15;-5": {
+      "type": "grass",
+      "variant": 2,
+      "pos": [
+        480,
+        -160
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "14;-6": {
+      "type": "grass",
+      "variant": 2,
+      "pos": [
+        448,
+        -192
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "13;-6": {
+      "type": "grass",
+      "variant": 1,
+      "pos": [
+        416,
+        -192
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "12;-6": {
+      "type": "grass",
+      "variant": 0,
+      "pos": [
+        384,
+        -192
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "9;-3": {
+      "type": "grass",
+      "variant": 6,
+      "pos": [
+        288,
+        -96
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "9;-4": {
+      "type": "grass",
+      "variant": 7,
+      "pos": [
+        288,
+        -128
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "9;-5": {
+      "type": "grass",
+      "variant": 12,
+      "pos": [
+        288,
+        -160
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "8;-5": {
+      "type": "grass",
+      "variant": 5,
+      "pos": [
+        256,
+        -160
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "7;-5": {
+      "type": "grass",
+      "variant": 5,
+      "pos": [
+        224,
+        -160
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "6;-5": {
+      "type": "grass",
+      "variant": 5,
+      "pos": [
+        192,
+        -160
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "5;-5": {
+      "type": "grass",
+      "variant": 6,
+      "pos": [
+        160,
+        -160
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "5;-6": {
+      "type": "grass",
+      "variant": 7,
+      "pos": [
+        160,
+        -192
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "6;-6": {
+      "type": "grass",
+      "variant": 10,
+      "pos": [
+        192,
+        -192
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "7;-6": {
+      "type": "grass",
+      "variant": 1,
+      "pos": [
+        224,
+        -192
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "8;-6": {
+      "type": "grass",
+      "variant": 1,
+      "pos": [
+        256,
+        -192
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "9;-6": {
+      "type": "grass",
+      "variant": 1,
+      "pos": [
+        288,
+        -192
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "10;-6": {
+      "type": "grass",
+      "variant": 2,
+      "pos": [
+        320,
+        -192
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "0;-8": {
+      "type": "grass",
+      "variant": 0,
+      "pos": [
+        0,
+        -256
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "1;-8": {
+      "type": "grass",
+      "variant": 1,
+      "pos": [
+        32,
+        -256
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "2;-8": {
+      "type": "grass",
+      "variant": 1,
+      "pos": [
+        64,
+        -256
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "3;-8": {
+      "type": "grass",
+      "variant": 1,
+      "pos": [
+        96,
+        -256
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "4;-8": {
+      "type": "grass",
+      "variant": 1,
+      "pos": [
+        128,
+        -256
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "4;-7": {
+      "type": "grass",
+      "variant": 5,
+      "pos": [
+        128,
+        -224
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "5;-7": {
+      "type": "grass",
+      "variant": 12,
+      "pos": [
+        160,
+        -224
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "3;-7": {
+      "type": "grass",
+      "variant": 5,
+      "pos": [
+        96,
+        -224
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "2;-7": {
+      "type": "grass",
+      "variant": 5,
+      "pos": [
+        64,
+        -224
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "1;-7": {
+      "type": "grass",
+      "variant": 5,
+      "pos": [
+        32,
+        -224
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "0;-7": {
+      "type": "grass",
+      "variant": 6,
+      "pos": [
+        0,
+        -224
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "5;-8": {
+      "type": "grass",
+      "variant": 1,
+      "pos": [
+        160,
+        -256
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "6;-8": {
+      "type": "grass",
+      "variant": 2,
+      "pos": [
+        192,
+        -256
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "6;-7": {
+      "type": "grass",
+      "variant": 3,
+      "pos": [
+        192,
+        -224
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "2;10": {
+      "type": "grass",
+      "variant": 4,
+      "pos": [
+        64,
+        320
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-4;-3": {
+      "type": "loading_zones",
+      "variant": 0,
+      "pos": [
+        -128,
+        -96
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": "west_exit"
+    },
+    "-4;-2": {
+      "type": "loading_zones",
+      "variant": 0,
+      "pos": [
+        -128,
+        -64
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": "west_exit"
+    },
+    "2;-1": {
       "type": "large_decor",
       "variant": 2,
       "pos": [
-        11,
-        1
-      ]
+        64,
+        -32
+      ],
+      "is_drawn": true,
+      "is_interactable": false,
+      "flag": ""
+    },
+    "7;-10": {
+      "type": "large_decor",
+      "variant": 2,
+      "pos": [
+        224,
+        -320
+      ],
+      "is_drawn": true,
+      "is_interactable": false,
+      "flag": ""
+    },
+    "0;-12": {
+      "type": "large_decor",
+      "variant": 2,
+      "pos": [
+        0,
+        -384
+      ],
+      "is_drawn": true,
+      "is_interactable": false,
+      "flag": ""
+    },
+    "23;0": {
+      "type": "grass",
+      "variant": 11,
+      "pos": [
+        736,
+        0
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "24;0": {
+      "type": "grass",
+      "variant": 5,
+      "pos": [
+        768,
+        0
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "24;-1": {
+      "type": "grass",
+      "variant": 8,
+      "pos": [
+        768,
+        -32
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "23;-1": {
+      "type": "grass",
+      "variant": 9,
+      "pos": [
+        736,
+        -32
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "22;-1": {
+      "type": "grass",
+      "variant": 0,
+      "pos": [
+        704,
+        -32
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "23;-2": {
+      "type": "grass",
+      "variant": 0,
+      "pos": [
+        736,
+        -64
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "24;-2": {
+      "type": "grass",
+      "variant": 1,
+      "pos": [
+        768,
+        -64
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "25;-2": {
+      "type": "grass",
+      "variant": 1,
+      "pos": [
+        800,
+        -64
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "26;-2": {
+      "type": "grass",
+      "variant": 1,
+      "pos": [
+        832,
+        -64
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "27;-2": {
+      "type": "grass",
+      "variant": 1,
+      "pos": [
+        864,
+        -64
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "28;-2": {
+      "type": "grass",
+      "variant": 2,
+      "pos": [
+        896,
+        -64
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "25;-1": {
+      "type": "grass",
+      "variant": 8,
+      "pos": [
+        800,
+        -32
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "26;-1": {
+      "type": "grass",
+      "variant": 8,
+      "pos": [
+        832,
+        -32
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "27;-1": {
+      "type": "grass",
+      "variant": 8,
+      "pos": [
+        864,
+        -32
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "28;-1": {
+      "type": "grass",
+      "variant": 3,
+      "pos": [
+        896,
+        -32
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "27;0": {
+      "type": "grass",
+      "variant": 5,
+      "pos": [
+        864,
+        0
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "26;0": {
+      "type": "grass",
+      "variant": 5,
+      "pos": [
+        832,
+        0
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "25;0": {
+      "type": "grass",
+      "variant": 5,
+      "pos": [
+        800,
+        0
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "28;0": {
+      "type": "grass",
+      "variant": 4,
+      "pos": [
+        896,
+        0
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "25;-5": {
+      "type": "grass",
+      "variant": 6,
+      "pos": [
+        800,
+        -160
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "26;-5": {
+      "type": "grass",
+      "variant": 5,
+      "pos": [
+        832,
+        -160
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "27;-5": {
+      "type": "grass",
+      "variant": 5,
+      "pos": [
+        864,
+        -160
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "28;-5": {
+      "type": "grass",
+      "variant": 4,
+      "pos": [
+        896,
+        -160
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "25;-6": {
+      "type": "grass",
+      "variant": 7,
+      "pos": [
+        800,
+        -192
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "26;-6": {
+      "type": "grass",
+      "variant": 8,
+      "pos": [
+        832,
+        -192
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "27;-6": {
+      "type": "grass",
+      "variant": 8,
+      "pos": [
+        864,
+        -192
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "28;-6": {
+      "type": "grass",
+      "variant": 3,
+      "pos": [
+        896,
+        -192
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "25;-7": {
+      "type": "grass",
+      "variant": 7,
+      "pos": [
+        800,
+        -224
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "26;-7": {
+      "type": "grass",
+      "variant": 8,
+      "pos": [
+        832,
+        -224
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "27;-7": {
+      "type": "grass",
+      "variant": 8,
+      "pos": [
+        864,
+        -224
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "28;-7": {
+      "type": "grass",
+      "variant": 3,
+      "pos": [
+        896,
+        -224
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "25;-8": {
+      "type": "grass",
+      "variant": 7,
+      "pos": [
+        800,
+        -256
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "26;-8": {
+      "type": "grass",
+      "variant": 8,
+      "pos": [
+        832,
+        -256
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "27;-8": {
+      "type": "grass",
+      "variant": 8,
+      "pos": [
+        864,
+        -256
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "28;-8": {
+      "type": "grass",
+      "variant": 3,
+      "pos": [
+        896,
+        -256
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "25;-9": {
+      "type": "grass",
+      "variant": 7,
+      "pos": [
+        800,
+        -288
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "25;-10": {
+      "type": "grass",
+      "variant": 7,
+      "pos": [
+        800,
+        -320
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "25;-11": {
+      "type": "grass",
+      "variant": 7,
+      "pos": [
+        800,
+        -352
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "25;-12": {
+      "type": "grass",
+      "variant": 0,
+      "pos": [
+        800,
+        -384
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "26;-12": {
+      "type": "grass",
+      "variant": 1,
+      "pos": [
+        832,
+        -384
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "26;-11": {
+      "type": "grass",
+      "variant": 8,
+      "pos": [
+        832,
+        -352
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "26;-10": {
+      "type": "grass",
+      "variant": 8,
+      "pos": [
+        832,
+        -320
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "26;-9": {
+      "type": "grass",
+      "variant": 8,
+      "pos": [
+        832,
+        -288
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "27;-9": {
+      "type": "grass",
+      "variant": 8,
+      "pos": [
+        864,
+        -288
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "27;-10": {
+      "type": "grass",
+      "variant": 8,
+      "pos": [
+        864,
+        -320
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "27;-11": {
+      "type": "grass",
+      "variant": 8,
+      "pos": [
+        864,
+        -352
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "27;-12": {
+      "type": "grass",
+      "variant": 1,
+      "pos": [
+        864,
+        -384
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "28;-12": {
+      "type": "grass",
+      "variant": 2,
+      "pos": [
+        896,
+        -384
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "28;-11": {
+      "type": "grass",
+      "variant": 3,
+      "pos": [
+        896,
+        -352
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "28;-10": {
+      "type": "grass",
+      "variant": 3,
+      "pos": [
+        896,
+        -320
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "28;-9": {
+      "type": "grass",
+      "variant": 3,
+      "pos": [
+        896,
+        -288
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "-10;6": {
+      "type": "grass",
+      "variant": 6,
+      "pos": [
+        -320,
+        192
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": ""
+    },
+    "25;-4": {
+      "type": "loading_zones",
+      "variant": 1,
+      "pos": [
+        800,
+        -128
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": "east_exit"
+    },
+    "25;-3": {
+      "type": "loading_zones",
+      "variant": 1,
+      "pos": [
+        800,
+        -96
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": "east_exit"
     }
   },
   "tile_size": 32,
@@ -159,9 +3681,265 @@
       "type": "spawners",
       "variant": 0,
       "pos": [
-        358.5,
-        107.5
-      ]
+        -4,
+        -24
+      ],
+      "is_drawn": false,
+      "is_interactable": false,
+      "flag": ""
+    },
+    {
+      "type": "large_decor",
+      "variant": 0,
+      "pos": [
+        74,
+        55
+      ],
+      "is_drawn": true,
+      "is_interactable": false,
+      "flag": ""
+    },
+    {
+      "type": "large_decor",
+      "variant": 1,
+      "pos": [
+        -92,
+        -44
+      ],
+      "is_drawn": true,
+      "is_interactable": false,
+      "flag": ""
+    },
+    {
+      "type": "large_decor",
+      "variant": 1,
+      "pos": [
+        -131,
+        84
+      ],
+      "is_drawn": true,
+      "is_interactable": false,
+      "flag": ""
+    },
+    {
+      "type": "large_decor",
+      "variant": 2,
+      "pos": [
+        54,
+        -325
+      ],
+      "is_drawn": true,
+      "is_interactable": false,
+      "flag": ""
+    },
+    {
+      "type": "large_decor",
+      "variant": 2,
+      "pos": [
+        -36,
+        -338
+      ],
+      "is_drawn": true,
+      "is_interactable": false,
+      "flag": ""
+    },
+    {
+      "type": "decor",
+      "variant": 0,
+      "pos": [
+        383,
+        49
+      ],
+      "is_drawn": true,
+      "is_interactable": false,
+      "flag": ""
+    },
+    {
+      "type": "decor",
+      "variant": 0,
+      "pos": [
+        414,
+        48
+      ],
+      "is_drawn": true,
+      "is_interactable": false,
+      "flag": ""
+    },
+    {
+      "type": "decor",
+      "variant": 1,
+      "pos": [
+        349,
+        48
+      ],
+      "is_drawn": true,
+      "is_interactable": false,
+      "flag": ""
+    },
+    {
+      "type": "decor",
+      "variant": 1,
+      "pos": [
+        513,
+        80
+      ],
+      "is_drawn": true,
+      "is_interactable": false,
+      "flag": ""
+    },
+    {
+      "type": "decor",
+      "variant": 1,
+      "pos": [
+        679,
+        -16
+      ],
+      "is_drawn": true,
+      "is_interactable": false,
+      "flag": ""
+    },
+    {
+      "type": "decor",
+      "variant": 1,
+      "pos": [
+        -158,
+        81
+      ],
+      "is_drawn": true,
+      "is_interactable": false,
+      "flag": ""
+    },
+    {
+      "type": "spawners",
+      "variant": 1,
+      "pos": [
+        -188,
+        79
+      ],
+      "is_drawn": false,
+      "is_interactable": false,
+      "flag": ""
+    },
+    {
+      "type": "decor",
+      "variant": 3,
+      "pos": [
+        20,
+        272
+      ],
+      "is_drawn": true,
+      "is_interactable": false,
+      "flag": ""
+    },
+    {
+      "type": "decor",
+      "variant": 3,
+      "pos": [
+        34,
+        272
+      ],
+      "is_drawn": true,
+      "is_interactable": false,
+      "flag": ""
+    },
+    {
+      "type": "decor",
+      "variant": 3,
+      "pos": [
+        27,
+        260
+      ],
+      "is_drawn": true,
+      "is_interactable": false,
+      "flag": ""
+    },
+    {
+      "type": "decor",
+      "variant": 3,
+      "pos": [
+        234,
+        -208
+      ],
+      "is_drawn": true,
+      "is_interactable": false,
+      "flag": ""
+    },
+    {
+      "type": "decor",
+      "variant": 2,
+      "pos": [
+        200,
+        -272
+      ],
+      "is_drawn": true,
+      "is_interactable": false,
+      "flag": ""
+    },
+    {
+      "type": "decor",
+      "variant": 2,
+      "pos": [
+        404,
+        -208
+      ],
+      "is_drawn": true,
+      "is_interactable": false,
+      "flag": ""
+    },
+    {
+      "type": "large_decor",
+      "variant": 2,
+      "pos": [
+        386,
+        -296
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": "east_exit"
+    },
+    {
+      "type": "large_decor",
+      "variant": 2,
+      "pos": [
+        531,
+        14
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": "east_exit"
+    },
+    {
+      "type": "large_decor",
+      "variant": 2,
+      "pos": [
+        321,
+        -27
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": "east_exit"
+    },
+    {
+      "type": "large_decor",
+      "variant": 2,
+      "pos": [
+        281,
+        -26
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": "east_exit"
+    },
+    {
+      "type": "large_decor",
+      "variant": 2,
+      "pos": [
+        -359,
+        -149
+      ],
+      "is_drawn": true,
+      "is_interactable": true,
+      "flag": "east_exit"
     }
   ]
 }

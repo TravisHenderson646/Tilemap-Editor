@@ -47,7 +47,6 @@ class Tilemap:
         
     def autotile(self):
         for loc, tile in self.tilemap.items():
-            print(tile)
             if (tile['type'] in AUTOTILE_TYPES):
                 neighbors = set()
                 for shift in [(1, 0), (-1, 0), (0, -1), (0, 1)]:

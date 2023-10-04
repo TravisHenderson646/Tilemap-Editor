@@ -131,7 +131,7 @@ class Editor:
                     tile_hovered = str(self.tile_pos_rounded[0]) + ';' + str(self.tile_pos_rounded[1])
                     if tile_hovered in self.tilemap.tilemap:
                         print(self.tilemap.tilemap[tile_hovered])
-                        print(tile_hoveredw)
+                        print(tile_hovered)
                     for tile in self.tilemap.offgrid_tiles.copy():
                         tile_image = self.assets[tile['type']][tile['variant']]
                         tile_rect = pg.Rect(tile['pos'][0] - self.scroll[0], tile['pos'][1] - self.scroll[1], tile_image.get_width(), tile_image.get_height())
