@@ -73,11 +73,12 @@ class Editor:
         self.tile_variant = 0
         self.grid_on = True
         
+        ### Buttons
         self.is_drawn = True
-        self.is_drawn_button = Button((5, 330, 25, 25), self.toggle_is_drawn)
         self.is_interactable = True
-        self.is_interactable_button = Button((5, 300, 25, 25), self.toggle_is_interactable)
         self.flag = ''
+        self.is_drawn_button = Button((5, 330, 25, 25), self.toggle_is_drawn)
+        self.is_interactable_button = Button((5, 300, 25, 25), self.toggle_is_interactable)
         self.edit_flag_button = Button((610, 330, 25, 25), self.edit_flag)
         
     def edit_flag(self):
@@ -112,9 +113,6 @@ class Editor:
             if event.type == pg.MOUSEBUTTONDOWN:
                 if event.button == 1:
                     self.clicking = True
-                    self.is_drawn_button.get_event(event, self.mouse_pos)
-                    self.is_interactable_button.get_event(event, self.mouse_pos)
-                    self.edit_flag_button.get_event(event, self.mouse_pos)
                     if not self.grid_on:
                         self.tilemap.offgrid_tiles.append({
                             'type': self.tile_list[self.tile_group],
