@@ -76,14 +76,17 @@ class Editor:
         ### Buttons
         self.is_drawn = True
         self.is_interactable = True
-        self.flag = ''
+        self.tags = []
         self.is_drawn_button = Button((5, 330, 25, 25), self.toggle_is_drawn)
         self.is_interactable_button = Button((5, 300, 25, 25), self.toggle_is_interactable)
-        self.edit_flag_button = Button((610, 330, 25, 25), self.edit_flag)
+        self.edit_tags_button = Button((610, 330, 25, 25), self.edit_tags)
         
-    def edit_flag(self):
-        self.flag = input('Type a str for tile.flag:  ')
-        print(self.flag)
+    def edit_tags(self):
+        # List of keywords: drawn, solid, exit, entrance, north, south, east, west
+        print('Type a str for new tile.tags:  ')
+        print('drawn, solid, exit, entrance, north, south, east, west')
+        self.tags = input('').split()
+        print(self.tags)
 
     def toggle_is_drawn(self):
         self.is_drawn = not self.is_drawn
@@ -114,19 +117,18 @@ class Editor:
                 if event.button == 1:
                     self.clicking = True
                     if not self.grid_on:
+                        print(self.tile_list[self.tile_group])
                         self.tilemap.offgrid_tiles.append({
                             'type': self.tile_list[self.tile_group],
                             'variant': self.tile_variant,
                             'pos': (floor(self.mouse_pos[0] + self.rounded_scroll[0]), floor(self.mouse_pos[1] + self.rounded_scroll[1])),
-                            'is_drawn': self.is_drawn,
-                            'is_interactable': self.is_interactable,
-                            'flag': self.flag,
+                            'tags': self.tags,
                             })
                         print(self.tilemap.offgrid_tiles[-1])
                 if event.button == 2:
                     self.is_drawn_button.get_event(event, self.mouse_pos)
                     self.is_interactable_button.get_event(event, self.mouse_pos)
-                    self.edit_flag_button.get_event(event, self.mouse_pos)
+                    self.edit_tags_button.get_event(event, self.mouse_pos)
                     tile_hovered = str(self.tile_pos_rounded[0]) + ';' + str(self.tile_pos_rounded[1])
                     if tile_hovered in self.tilemap.tilemap:
                         print(self.tilemap.tilemap[tile_hovered])
@@ -203,9 +205,7 @@ class Editor:
                 'type': self.tile_list[self.tile_group],
                 'variant': self.tile_variant,
                 'pos': (self.tile_pos_rounded[0] * self.tile_size, self.tile_pos_rounded[1] * self.tile_size),
-                'is_drawn': self.is_drawn,
-                'is_interactable': self.is_interactable,
-                'flag': self.flag
+                'tags': self.tags
                 }
             print(self.tilemap.tilemap[tile_clicked])
         if self.right_clicking:
@@ -237,7 +237,7 @@ class Editor:
         # render the buttons
         self.is_drawn_button.render(self.display)
         self.is_interactable_button.render(self.display)
-        self.edit_flag_button.render(self.display)
+        self.edit_tags_button.render(self.display)
         
         self.screen.blit(pg.transform.scale(self.display, self.screen.get_size()), (0,0))
         pg.display.update()
