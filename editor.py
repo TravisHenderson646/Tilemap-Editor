@@ -21,7 +21,7 @@ from scripts.image_loader import load_images
 from scripts.tilemap import Tilemap
 from scripts.button import Button
 
-RENDER_SCALE = 2.0 #todo based on the screen
+RENDER_SCALE = 8.0 #todo based on the screen
 
 BLACK = pg.Color(0, 0, 0)
 
@@ -34,7 +34,7 @@ class Editor:
         pg.mouse.set_cursor(pg.cursors.broken_x)
         
         self.screen = pg.display.set_mode((1280, 720))
-        self.display = pg.Surface((640,360))
+        self.display = pg.Surface((320//2,180//2))
 
         self.clock = pg.time.Clock()
 
@@ -53,7 +53,7 @@ class Editor:
         self.clicking = False
         self.right_clicking = False
         self.shift = False
-        self.tile_size = 32
+        self.tile_size = 8
         
         self.tilemap = Tilemap(self, tile_size=self.tile_size)
         
