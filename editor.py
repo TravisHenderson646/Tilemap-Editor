@@ -21,7 +21,7 @@ from scripts.image_loader import load_images
 from scripts.tilemap import Tilemap
 from scripts.button import Button
 
-RENDER_SCALE = 8.0 #todo based on the screen
+RENDER_SCALE = 4.0 #todo based on the screen
 
 BLACK = pg.Color(0, 0, 0)
 
@@ -34,7 +34,7 @@ class Editor:
         pg.mouse.set_cursor(pg.cursors.broken_x)
         
         self.screen = pg.display.set_mode((1280, 720))
-        self.display = pg.Surface((320//2,180//2))
+        self.display = pg.Surface((320,180))
 
         self.clock = pg.time.Clock()
 
@@ -79,7 +79,7 @@ class Editor:
         self.tags = []
         self.is_drawn_button = Button((5, 330, 25, 25), self.toggle_is_drawn)
         self.is_interactable_button = Button((5, 300, 25, 25), self.toggle_is_interactable)
-        self.edit_tags_button = Button((610, 330, 25, 25), self.edit_tags)
+        self.edit_tags_button = Button((307, 167, 10, 10), self.edit_tags)
         
     def edit_tags(self):
         # List of keywords: drawn, solid, exit, entrance, north, south, east, west
