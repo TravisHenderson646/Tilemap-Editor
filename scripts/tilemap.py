@@ -71,9 +71,6 @@ class Tilemap:
                                         case (-1, -1):
                                             tile['variant'] = 9
 
-                            
-                            
-
     def render(self, surf, offset):
         '''Takes the display surface and screen scroll and renders the tilemap section'''
         for tile in self.offgrid_tiles: #
@@ -84,7 +81,6 @@ class Tilemap:
                 loc = str(x) +';' + str(y)
                 if loc in self.tilemap:
                     tile = self.tilemap[loc]
-
                     surf.blit(self.game.assets[tile['type']][tile['variant']], (floor(tile['pos'][0]) - offset[0], floor(tile['pos'][1]) - offset[1]))
                     
                     
