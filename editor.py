@@ -103,6 +103,20 @@ class Editor:
         else:
             self.is_interactable_button.image.fill(BLACK, (pg.Rect(4, 4, self.is_interactable_button.rect.width - 8, self.is_interactable_button.rect.height - 8)))
         print(f'is interactable?: {self.is_interactable}')
+                
+    def floodfill(self, target_pos):
+        target_key = f'{target_pos[0]};{target_pos[1]}'
+        if target_key not in self.tilemap.tilemap.keys():
+            self.tilemap.tilemap[target_key] = {
+                'type': self.tile_list[self.tile_group],
+                'variant': self.tile_variant,
+                'pos': (floor(target_pos[0] * self.tile_size), floor(target_pos[1] * self.tile_size)),
+                'tags': self.tags
+            }
+            self.floodfill((target_pos[0]    , target_pos[1] + 1))
+            self.floodfill((target_pos[0]    , target_pos[1] - 1))
+            self.floodfill((target_pos[0] + 1, target_pos[1]    ))
+            self.floodfill((target_pos[0] - 1, target_pos[1]    ))
         
     def event_loop(self):
         self.mouse_pos = pg.Vector2(pg.mouse.get_pos()) // RENDER_SCALE
@@ -117,7 +131,6 @@ class Editor:
                 if event.button == 1:
                     self.clicking = True
                     if not self.grid_on:
-                        print(self.tile_list[self.tile_group])
                         self.tilemap.offgrid_tiles.append({
                             'type': self.tile_list[self.tile_group],
                             'variant': self.tile_variant,
@@ -175,6 +188,8 @@ class Editor:
                     self.grid_on = not self.grid_on
                 if event.key == pg.K_t:
                     self.tilemap.autotile()
+                if event.key == pg.K_l:
+                    self.floodfill(self.tile_pos_rounded)
                 if event.key == pg.K_RETURN:
                     self.tilemap.save('map.json')
                 if event.key == pg.K_LSHIFT:
@@ -204,7 +219,7 @@ class Editor:
             self.tilemap.tilemap[tile_clicked] = {
                 'type': self.tile_list[self.tile_group],
                 'variant': self.tile_variant,
-                'pos': (self.tile_pos_rounded[0] * self.tile_size, self.tile_pos_rounded[1] * self.tile_size),
+                'pos': (floor(self.tile_pos_rounded[0] * self.tile_size), floor(self.tile_pos_rounded[1] * self.tile_size)),
                 'tags': self.tags
                 }
             print(self.tilemap.tilemap[tile_clicked])
@@ -217,8 +232,6 @@ class Editor:
                 tile_rect = pg.Rect(tile['pos'][0] - self.scroll[0], tile['pos'][1] - self.scroll[1], tile_image.get_width(), tile_image.get_height())
                 if tile_rect.collidepoint(self.mouse_pos):
                     self.tilemap.offgrid_tiles.remove(tile)
-
-
 
     def render(self):
         self.display.fill((0, 0, 0, 0))
