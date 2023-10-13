@@ -84,7 +84,7 @@ class Editor:
     def edit_tags(self):
         # List of keywords: drawn, solid, exit, entrance, north, south, east, west
         print('Type a str for new tile.tags:  ')
-        print('drawn, rendered, solid, breakable, exit, entrance, north, south, east, west')
+        print('drawn rendered solid breakable enemy exit entrance north south east west')
         self.tags = input('').split()
         print(self.tags)
 
