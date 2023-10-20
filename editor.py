@@ -44,9 +44,10 @@ class Editor:
             'grass' : load_images('tiles/grass'),
             'large_decor' : load_images('tiles/large_decor'),
             'stone' : load_images('tiles/stone'),
-            'spawners': load_images('tiles/spawners'),
-            'loading_zones': load_images('tiles/loading_zones'),
-            'spawns': load_images('tiles/spawns')
+            'enemies': load_images('tiles/enemies'),
+            'exits': load_images('tiles/exits'),
+            'spawns': load_images('tiles/spawns'),
+            'special': load_images('tiles/special'),
             }
         
         self.movement = [False, False, False, False]
@@ -84,7 +85,7 @@ class Editor:
     def edit_tags(self):
         # List of keywords: drawn, solid, exit, entrance, north, south, east, west
         print('Type a str for new tile.tags:  ')
-        print('drawn rendered solid breakable enemy exit entrance north south east west')
+        print('painted chunked rendered breakable enemy spike exit entrance north south east west')
         self.tags = input('').split()
         print(self.tags)
 
