@@ -43,7 +43,6 @@ class Editor:
             'decor' : load_images('tiles/decor'),
             'grass' : load_images('tiles/grass'),
             'large_decor' : load_images('tiles/large_decor'),
-            'stone' : load_images('tiles/stone'),
             'enemies': load_images('tiles/enemies'),
             'exits': load_images('tiles/exits'),
             'spawns': load_images('tiles/spawns'),
@@ -70,40 +69,68 @@ class Editor:
         self.mouse_pos: pg.Vector2()
         
         self.tile_list = list(self.assets)
-        self.tile_group = 0 # I think this should be tile_type
+        self.tile_group = 0
         self.tile_variant = 0
         self.grid_on = True
         
         ### Buttons
         self.is_drawn = True
-        self.is_interactable = True
+        self.attackable = True
         self.tags = []
-        self.is_drawn_button = Button((5, 330, 25, 25), self.toggle_is_drawn)
-        self.is_interactable_button = Button((5, 300, 25, 25), self.toggle_is_interactable)
+        self.grass_button = Button((5, 167, 10, 10), self.select_grass)
+        self.grass_button.image = self.assets[self.tile_list[1]][0]
+        self.dirt_button = Button((5, 141, 10, 10), self.select_dirt)
+        self.dirt_button.image = self.assets[self.tile_list[6]][0]
+        self.spike_button = Button((5, 128, 10, 10), self.select_spike)
+        self.spike_button.image = self.assets[self.tile_list[6]][1]
+        self.decor_button = Button((5, 154, 10, 10), self.select_decor)
+        self.decor_button.image = self.assets[self.tile_list[0]][0]
         self.edit_tags_button = Button((307, 167, 10, 10), self.edit_tags)
+        self.clear_tags_button = Button((307, 154, 10, 10), self.clear_tags)
+    
+
+    def select_decor(self):
+        self.tile_group = 0
+        self.tile_variant = 0
+        self.tags = ['rendered', 'breakable']
+        print(f'grass: {self.tags}')
         
+    def select_spike(self):
+        self.tile_group = 6
+        self.tile_variant = 1
+        self.tags = ['painted', 'attackable', 'clanker']
+        print(f'grass: {self.tags}')
+        
+    def select_dirt(self):
+        self.tile_group = 6
+        self.tile_variant = 0
+        self.tags = ['rendered', 'attackable', 'breakable', 'clanker']
+        print(f'grass: {self.tags}')
+    
     def edit_tags(self):
         # List of keywords: drawn, solid, exit, entrance, north, south, east, west
         print('Type a str for new tile.tags:  ')
-        print('painted chunked rendered breakable enemy spike exit entrance north south east west')
-        self.tags = input('').split()
+        print('painted chunked rendered solid attackable breakable clanker exit entrance north south east west')
+        for tag in input('').split():
+            self.tags.append(tag)
+        print(self.tags)    
+        
+    def clear_tags(self):
+        # List of keywords: drawn, solid, exit, entrance, north, south, east, west
+        self.tags = []
         print(self.tags)
 
-    def toggle_is_drawn(self):
-        self.is_drawn = not self.is_drawn
-        if self.is_drawn:
-            self.is_drawn_button.image.fill(self.is_drawn_button.color)
-        else:
-            self.is_drawn_button.image.fill(BLACK, (pg.Rect(4, 4, self.is_drawn_button.rect.width - 8, self.is_drawn_button.rect.height - 8)))
-        print(f'is drawn?{self.is_drawn}')
+    def select_grass(self):
+        self.tile_group = 1
+        self.tile_variant = 0
+        self.tags = ['painted', 'chunked']
+        print(f'grass: {self.tags}')
         
-    def toggle_is_interactable(self):
-        self.is_interactable = not self.is_interactable
-        if self.is_interactable:
-            self.is_interactable_button.image.fill(self.is_interactable_button.color)
-        else:
-            self.is_interactable_button.image.fill(BLACK, (pg.Rect(4, 4, self.is_interactable_button.rect.width - 8, self.is_interactable_button.rect.height - 8)))
-        print(f'is interactable?: {self.is_interactable}')
+    def select_attackable(self):
+        self.tile_group = 4
+        self.tile_variant = 0
+        self.tags = ['rendered', 'attackable']
+        print(f'{self.tags}')
                 
     def floodfill(self, target_pos):
         target_key = f'{target_pos[0]};{target_pos[1]}'
@@ -140,8 +167,11 @@ class Editor:
                             })
                         print(self.tilemap.offgrid_tiles[-1])
                 if event.button == 2:
-                    self.is_drawn_button.get_event(event, self.mouse_pos)
-                    self.is_interactable_button.get_event(event, self.mouse_pos)
+                    self.grass_button.get_event(event, self.mouse_pos)
+                    self.dirt_button.get_event(event, self.mouse_pos)
+                    self.spike_button.get_event(event, self.mouse_pos)
+                    self.decor_button.get_event(event, self.mouse_pos)
+                    self.clear_tags_button.get_event(event, self.mouse_pos)
                     self.edit_tags_button.get_event(event, self.mouse_pos)
                     tile_hovered = str(self.tile_pos_rounded[0]) + ';' + str(self.tile_pos_rounded[1])
                     if tile_hovered in self.tilemap.tilemap:
@@ -249,9 +279,12 @@ class Editor:
         self.display.blit(current_tile_image, (0, 0))
         
         # render the buttons
-        self.is_drawn_button.render(self.display)
-        self.is_interactable_button.render(self.display)
+        self.grass_button.render(self.display)
+        self.dirt_button.render(self.display)
+        self.spike_button.render(self.display)
+        self.decor_button.render(self.display)
         self.edit_tags_button.render(self.display)
+        self.clear_tags_button.render(self.display)
         
         self.screen.blit(pg.transform.scale(self.display, self.screen.get_size()), (0,0))
         pg.display.update()
