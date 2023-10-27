@@ -47,6 +47,8 @@ class Editor:
             'exits': load_images('tiles/exits'),
             'spawns': load_images('tiles/spawns'),
             'special': load_images('tiles/special'),
+            'unlocks': load_images('tiles/unlocks'),
+            'npcs': load_images('tiles/npcs'),
             }
         
         self.movement = [False, False, False, False]
@@ -92,19 +94,19 @@ class Editor:
     def select_decor(self):
         self.tile_group = 0
         self.tile_variant = 0
-        self.tags = ['rendered', 'breakable']
+        self.tags = ['decor', 'rendered', 'breakable']
         print(f'grass: {self.tags}')
         
     def select_spike(self):
         self.tile_group = 6
         self.tile_variant = 1
-        self.tags = ['painted', 'attackable', 'clanker']
+        self.tags = ['spike', 'painted', 'attackable', 'clanker', 'solid', 'hitbox']
         print(f'grass: {self.tags}')
         
     def select_dirt(self):
         self.tile_group = 6
         self.tile_variant = 0
-        self.tags = ['rendered', 'attackable', 'breakable', 'clanker']
+        self.tags = ['dirt', 'rendered', 'attackable', 'breakable', 'clanker', 'solid']
         print(f'grass: {self.tags}')
     
     def edit_tags(self):
